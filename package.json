@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc && tsconfig-replace-paths --project tsconfig.json",
+    "start": "node dist/main",
+    "lint": "eslint --ext .ts src",
+    "lint:fix": "eslint --ext .ts src --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "dotenv": "^16.3.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "prisma": "^5.3.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "tsconfig-replace-paths": "^0.0.14",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@fast-csv/parse": "^4.3.6",
+    "@prisma/client": "^5.3.1"
+  }
+}
